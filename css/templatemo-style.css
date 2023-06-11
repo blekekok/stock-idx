@@ -17,7 +17,23 @@
   height: 100%;
 }
 
+.tes1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* gap: 30px; */
+  /* background-color: white; */
+}
 
+.tes2{
+  background-color: gray;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
@@ -87,10 +103,11 @@ ul {
 
 p {
 
-  color: #787878;
+  color: white;
 
   line-height: 22px;
 
+  text-align: justify;
 }
 
 
@@ -177,17 +194,20 @@ body {
 
 .bg__first {
 
-  background-image: url(
+  /* background-image: url(
 
-    ../images/first-bg.jpg
+    ../images/s3.jpg
 
-  );
+  ); */
+
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../images/s3.jpg);
 
 }
 
 .bg__first .container {
 
-  height: 75.5vh;
+  /* height: 75.5vh; */
+  height: 90vh;
 
   min-height: 440px;
 
@@ -201,12 +221,13 @@ body {
 
   height: 45vh;
 
-  background-image: url(
+  /* background-image: url(
 
-    ../images/second-bg.jpg
+    ../images/s2.jpg
 
-  );
+  ); */
 
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/s2.jpg);
 }
 
 
@@ -216,12 +237,14 @@ body {
   height: 100vh;
 
 
-
+/* 
   background-image: url(
 
-    ../images/third-bg.jpg
+    ../images/s1.jpg
 
-  );
+  ); */
+
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/s1.jpg);
 
 }
 
@@ -613,7 +636,7 @@ body {
 
 .single-item {
 
-  background-color: #fff;
+  background-color: rgb(66, 66, 66);
 
   text-align: center;
 
@@ -639,6 +662,11 @@ body {
 
 }
 
+.single-item .hehe:hover i{
+  color: green;
+  background-color: white;
+}
+
 
 
 .single-item i {
@@ -647,9 +675,11 @@ body {
 
   font-size: 26px;
 
-  color: #f23b3b;
+  color: green;
 
-  border: 1px solid #e7e7e7;
+  border: 1px solid white;
+
+  background-color: white;
 
   border-radius: 50%;
 
@@ -671,7 +701,7 @@ body {
 
   font-size: 15px;
 
-  color: #1e1e1e;
+  color: white;
 
   font-weight: 700;
 
@@ -699,9 +729,9 @@ body {
 
   text-align: center;
 
-  margin-top: 10px;
+  margin-top: 30px;
 
-  padding-bottom: 20px!important;
+  /* padding-bottom: 20px!important; */
 
 }
 
@@ -711,7 +741,7 @@ body {
 
   font-size: 22px;
 
-  color: #f23b3b;
+  color: white;
 
   width: 30px;
 
@@ -723,7 +753,7 @@ body {
 
   text-align: center;
 
-  border: 1px solid #f23b3b;
+  border: 1px solid white;
 
   border-radius: 50%;
 
@@ -767,7 +797,7 @@ body {
 
   margin-top: 20%;
 
-  background-color: #fff;
+  background-color: rgb(66, 66, 66);
 
   border-top: 3px solid #f23b3b;
 
