@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Layer - Parallax Template</title>
+        <title>IHSG-LQ45</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- 
@@ -129,7 +129,25 @@
         <div id="third-section">
           <div class="container">
             <div class="row">
-              <img src="images/Untitled.png" alt="">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/Untitled.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back" style="padding:0px 30px 0px 30px; font-size: large;">
+                    <h1 style="padding-bottom: 30px;">IHSG Strengthtening</h1> 
+                    <p>
+                      The Composite Stock Price Index (JCI) strengthened 4.09% throughout 2022 and closed at 6,850.62 on Friday (30/12). This year's JCI gain is lower than 10.07% in 2021.
+                      JCI ended 2022 with a total market capitalization value of IDR 9,499 trillion, based on IDX data. The IDX's market capitalization value increased 15.06% this year even though the JCI only rose 4.09%.
+                      This much higher increase in market capitalization was mainly due to the addition of issuers through IPOs and the issuance of new shares, both through rights issues and private placements of old issuers. 
+                      This year there are 59 new issuers that are holding an initial public offering (IPO). The total value of this year's IPO reached Rp 33.06 trillion.
+                    </p>
+                    <p>
+                      The graph shows some of the highest point contributor to IHSG
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-12">
               <div class="fourth-arrow">
@@ -145,16 +163,52 @@
         <div id="fourth-section">
           <div class="container">
             <div class="row">
-              <img src="images/asdas.png" alt="">
+              <!-- <div class="col-md-3 col-sm-6 wow bounceInUp">
+                <img src="images/asdas.png" alt="">
+              </div> -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/asdas.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back" style="padding:0px 30px 0px 30px; font-size: large;">
+                    <h1 style="padding-bottom: 30px;">IHSG Losses</h1> 
+                    <p>
+                      The IDX Technology Sector weighed on the stock with a 42.61% decline since the start of the year.
+                      Meanwhile, the shares of PT GoTo Gojek Tokopedia Tbk (GOTO) are the biggest laggard or ballast for the JCI throughout 2022.
+                      PT Bank Jago Tbk (ARTO) shares were dropped from the list of 10 stocks with the largest capitalization this year. This digital bank's share price fell 76.8% and caused its market capitalization to plunge to only IDR 51 trillion.
+                      A similar fate befell the shares of PT Elang Mahkota Teknologi Tbk (EMTK). The issuer holding's share price fell 54.8%. EMTK's market capitalization was cut to Rp 63 trillion.
+                    </p> 
+                  </div>
+                </div>
+              </div>                            
             </div>
             <div class="col-md-12">
               <div class="fourth-arrow">
-                <a href="#" class="scroll-link btn btn-dark" data-id="foot"><i class="fa fa-angle-down"></i></a>
+                <a href="#" class="scroll-link btn btn-dark" data-id="fourth-half-section"><i class="fa fa-angle-down"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+      <div class="bg__fifth">
+        <div id="fourth-half-section">
+          <div class="container">
+            <div class="row">
+              <div class="youtube-video-container">
+                <iframe src="https://www.youtube.com/embed/IiM2Yw0Medk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </div>
+              <div class="fourth-arrow">
+                <a href="#" class="scroll-link btn btn-dark" data-id="foot"><i class="fa fa-angle-down"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
       <footer id="foot">
         <div class="container">
           <div class="row">
@@ -173,7 +227,7 @@
           </div>
           <div class="row">
             <div class="copyright-text">
-              <p>Copyright &copy; 2084 Company Name</p>
+              <p style="text-align: center;">Project Multimedia</p>
             </div>
           </div>
           <div class="col-md-12">
@@ -185,6 +239,7 @@
       </footer>
 
     </div>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/vendor/jquery-1.11.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/wow-animate.js"></script>
@@ -195,6 +250,12 @@
           animateClass: 'animated',
           offset:       100
         }).init();
+
+        $('.flip-card').click(function() {
+        $(this).toggleClass('flip');
+        });
+
+
     </script>
   </body>
 </html>
